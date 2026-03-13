@@ -1,0 +1,117 @@
+{
+  "issuers": [
+    {
+      "issuer_id": "INTRANT",
+      "credential_issuer": "INTRANT",
+      "protocol": "OpenId4VCI",
+      "display": [
+        {
+          "name": "INTRANT",
+          "logo": {
+            "url": "https://yt3.googleusercontent.com/D77-FpYNthYQkj1ppBgjZF49GrR3GoLqJAox_9ADgDETBc6EYUVgqYsGtT-BKRJb14TygOvuEA=s900-c-k-c0x00ffffff-no-rj",
+            "alt_text": "intrant-logo"
+          },
+          "title": "INTRANT",
+          "description": "Descargar Licencia de Conducir",
+          "language": "en"
+        }
+      ],
+      "client_id": "inji-client",
+      "client_secret": "xHExGYYfQiXEWvUDDwYxHFfURv9XiRmN",
+      "redirect_uri": "http://localhost:3001/redirect",
+      "token_endpoint": "http://localhost:8099/v1/mimoto/get-token/INTRANT",
+      "authorization_audience": "http://keycloak:8080/realms/inji/protocol/openid-connect/token",
+      "proxy_token_endpoint": "http://keycloak:8080/realms/inji/protocol/openid-connect/token",
+      "client_alias": "wallet-demo-client",
+      "qr_code_type": "EmbeddedVC",
+      "enabled": "true",
+      "wellknown_endpoint": "http://certify-service:8090/v1/certify/issuance/.well-known/openid-credential-issuer",
+      "credential_issuer_host": "http://certify-service:8090/v1/certify/issuance"
+    },
+    {
+      "issuer_id": "MINISTERIO_SALUD",
+      "credential_issuer": "MINISTERIO_SALUD",
+      "protocol": "OpenId4VCI",
+      "display": [
+        {
+          "name": "Ministerio de Salud",
+          "logo": {
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCag5r33cUfSjPZWy-akg4foe_7u35OgJdQ&s",
+            "alt_text": "ministerio-salud-logo"
+          },
+          "title": "Ministerio de Salud",
+          "description": "Descargar Exequatur Médico",
+          "language": "en"
+        }
+      ],
+      "client_id": "cd47d9f6-abe9-4f30-af62-01c50464ce41",
+      "client_secret": "1MZcEPR-pIBg9U.S.UlLZoXA7M",
+      "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
+      "token_endpoint": "http://localhost:8099/v1/mimoto/get-token/MINISTERIO_SALUD",
+      "authorization_audience": "https://cuenta.digital.gob.do/oauth2/token",
+      "proxy_token_endpoint": "https://cuenta.digital.gob.do/oauth2/token",
+      "client_alias": "wallet-demo-client",
+      "qr_code_type": "EmbeddedVC",
+      "enabled": "true",
+      "wellknown_endpoint": "http://localhost:8090/v1/certify/issuance/.well-known/openid-credential-issuer",
+      "credential_issuer_host": "http://localhost:8090/v1/certify/issuance"
+    },
+    {
+      "issuer_id": "MIGRACION",
+      "credential_issuer": "MIGRACION",
+      "protocol": "OpenId4VCI",
+      "display": [
+        {
+          "name": "Direccion de Migracion",
+          "logo": {
+            "url": "https://map.gob.do/COEDOM/Images/LogosOrganismos/66.jpg",
+            "alt_text": "migracion-logo"
+          },
+          "title": "Migracion",
+          "description": "Descargar E‑ticket",
+          "language": "en"
+        }
+      ],
+      "client_id": "cd47d9f6-abe9-4f30-af62-01c50464ce41",
+      "client_secret": "1MZcEPR-pIBg9U.S.UlLZoXA7M",
+      "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
+      "token_endpoint": "http://10.0.2.2:8099/v1/mimoto/get-token/MIGRACION",
+      "authorization_audience": "https://cuenta.digital.gob.do/oauth2/token",
+      "proxy_token_endpoint": "https://cuenta.digital.gob.do/oauth2/token",
+      "client_alias": "wallet-demo-client",
+      "qr_code_type": "EmbeddedVC",
+      "enabled": "true",
+      "wellknown_endpoint": "http://10.0.2.2:8090/v1/certify/issuance/.well-known/openid-credential-issuer",
+      "credential_issuer_host": "http://10.0.2.2:8090/v1/certify/issuance"
+    },
+    {
+      "issuer_id": "MINISTERIO_EDUCACION",
+      "credential_issuer": "MINISTERIO_EDUCACION",
+      "protocol": "OpenId4VCI",
+      "display": [
+        {
+          "name": "Ministerio de Educacion",
+          "logo": {
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUL81YP4Pl0Y1_72qZ9OXbymRXvzd5vwPqgjSn22JTeSqr7_bf4a-QxziAr1vZ0fAOc0VNtJ_NSap5rQuWhpjoNHltOHY1raaxPh46LdVPXw&s=10",
+            "alt_text": "ministerio-educacion-logo"
+          },
+          "title": "Ministerio de Educacion",
+          "description": "Descargar Expediente Único Educativo",
+          "language": "en"
+        }
+      ],
+      "client_id": "cd47d9f6-abe9-4f30-af62-01c50464ce41",
+      "client_secret": "1MZcEPR-pIBg9U.S.UlLZoXA7M",
+      "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
+      "token_endpoint": "http://10.0.2.2:8099/v1/mimoto/get-token/MINISTERIO_EDUCACION",
+      "authorization_audience": "https://cuenta.digital.gob.do/oauth2/token",
+      "proxy_token_endpoint": "https://cuenta.digital.gob.do/oauth2/token",
+      "client_alias": "wallet-demo-client",
+      "qr_code_type": "EmbeddedVC",
+      "enabled": "true",
+      "wellknown_endpoint": "http://10.0.2.2:8090/v1/certify/issuance/.well-known/openid-credential-issuer",
+      "credential_issuer_host": "http://10.0.2.2:8090/v1/certify/issuance"
+    }
+    
+  ]
+}

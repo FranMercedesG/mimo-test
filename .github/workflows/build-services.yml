@@ -47,13 +47,13 @@ jobs:
           name: inji-${{ github.event.inputs.services }}-jar
           path: ${{ env.TARGET_DIR }}/target/*.jar
 
-      - name: Prepare Build Context
-        run: |
-          mkdir -p ${{ env.TARGET_DIR }}
+      # - name: Prepare Build Context
+      #   run: |
+      #     mkdir -p ${{ env.TARGET_DIR }}
       
-          [ -d config ] && cp -ra config ${{ env.TARGET_DIR }}/
-          [ -d data ] && cp -ra data ${{ env.TARGET_DIR }}/
-          [ -d loader_path ] && cp -ra loader_path ${{ env.TARGET_DIR }}/
+      #     [ -d config ] && cp -ra config ${{ env.TARGET_DIR }}/
+      #     [ -d data ] && cp -ra data ${{ env.TARGET_DIR }}/
+      #     [ -d loader_path ] && cp -ra loader_path ${{ env.TARGET_DIR }}/
 
       - name: Google Auth
         id: auth

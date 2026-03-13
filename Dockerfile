@@ -74,6 +74,12 @@ VOLUME ${work_dir}/logs ${work_dir}/Glowroot
 ADD ./target/mimoto-*.jar ./mimoto.jar
 #COPY ./target/mimoto-*.jar mimoto.jar
 
+# Copying Profiles
+COPY ./config/mimoto-default.properties ${work_dir}/
+COPY ./config/credential-template.html ${work_dir}/
+COPY ./config/*.json ${work_dir}/
+COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
+
 # change permissions of file inside working dir
 RUN chown -R ${container_user}:${container_user} /home/${container_user}
 
